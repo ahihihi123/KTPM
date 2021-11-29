@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		h3{
+			margin-left: 20%;
+		}
+		form{
+			width: 1000px;
+			margin: 50px auto;
+			
+		}
+		table td{
+			padding: 5px;
+			text-indent: 20px;
+		}
+		button{
+			width: 80px;
+			height: 25px;
+			margin-left: 0 10px;
+		}
+		span{
+			color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+		<h3>Đăng Nhập</h3>
+		<table>
+		<tr>
+			<td>Nhập Số Điện Thoại:</td>
+			<td><input type="text" name="sdt" pattern="[0-9]{10}"
+		title="Số Điện Thoại Không Hợp lệ"></td>
+		</tr>
+		<tr>
+			<td>Nhập Mật Khẩu: </td>
+			<td><input type="password" name="pass" pattern="[A-Za-z0-9]{6,99}"
+		title="Ít nhất gồm 6 ký tự"></td>
+		</tr>
+		<tr>
+			<td></td>	
+			<td><input type="submit" value="Đăng Nhập"></td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>

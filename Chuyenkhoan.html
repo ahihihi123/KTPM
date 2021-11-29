@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+	<div name="ck" method="post" action="">
+	<p>
+	Nhập số tiền: 
+	<input type="text" name="tl" id="sotien">
+	</p>
+	<p><input type="submit" name="button" id="button" value="OK" onClick="check()"></p>
+	</div>
+	<script language="javascript">
+	function  check()
+	{
+		let soTien = document.getElementById('sotien').value;
+		console.log(soTien);
+		let sodu = 1000;
+		
+		if(soTien>sodu)
+		{
+			alert('Số dư không đủ');
+			document.writeln('Số dư: '+sodu);
+			return false;
+		} else {
+			alert('Chuyển Thành công');
+			document.writeln('Số dư: '+(sodu-soTien));
+			return true;
+		}
+	}
+</script>
+</body>
+</html>
